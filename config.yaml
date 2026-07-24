@@ -1,0 +1,44 @@
+- ts-directory-function: http://ts-directory-function:8830
+  ConfigCode: config
+  platform: bybit
+  YOUR_API_KEY: YOUR_API_KEY
+  YOUR_API_SECRET: YOUR_API_SECRET
+  httpApi: https://api.bybit.com
+  httpApiTick: https://api.bytick.com
+  wssApi: wss://stream.bybit.com
+  wssApiTick: wss://stream.bytick.com
+  InstanceID: exchange-ws
+  DefaultZone:
+  App: exchange-ws
+  Port: 8080
+  ExchengeWsUrl: "http://exchange-ws:8080"
+  RenewalIntervalInSecs: 10
+  RegistryFetchIntervalSeconds: 20
+  DurationInSecs: 30
+# BBT
+# authMessage := map[string]interface{}{
+# 	"req_id": uuid.New(),
+# 	"op":     "auth",
+# 	"args":   []interface{}{b.apiKey, expires, signature},
+# }
+# request := map[string]interface{}{
+# 	"reqId":  finalReqId,
+# 	"header": headers,
+# 	"op":     op,
+# 	"args":   []interface{}{args},
+# }
+# subMessage := map[string]interface{}{
+# 	"req_id": reqID,
+# 	"op":     "subscribe",
+# 	"args":   args,
+# }
+
+# MEXC
+# subMessage := map[string]interface{}{
+# 	"method": "SUBSCRIPTION",
+# 	"params": params,
+# }
+# unsubMessage := map[string]interface{}{
+# 	"method": "UNSUBSCRIPTION",
+# 	"params": []string{topic},
+# }
